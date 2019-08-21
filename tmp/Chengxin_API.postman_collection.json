@@ -1,0 +1,811 @@
+{
+	"info": {
+		"_postman_id": "f399c58c-fbb0-4438-9743-d121adee8c92",
+		"name": "Chengxin_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get make list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/makes",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"makes"
+					]
+				},
+				"description": "Get makes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model List - send parent = id from make",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/models/?parent=2",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"models",
+						""
+					],
+					"query": [
+						{
+							"key": "parent",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Get makes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get category list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/categories/?category_type=catalog",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					],
+					"query": [
+						{
+							"key": "category_type",
+							"value": "catalog"
+						}
+					]
+				},
+				"description": "Get makes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sticker",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"type": "text",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/categories/?category_type=sticker",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						""
+					],
+					"query": [
+						{
+							"key": "category_type",
+							"value": "sticker"
+						}
+					]
+				},
+				"description": "Get makes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sticker list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"type": "text",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/catalogs/?category_id=7",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						""
+					],
+					"query": [
+						{
+							"key": "category_id",
+							"value": "7"
+						}
+					]
+				},
+				"description": "Get sticker list"
+			},
+			"response": []
+		},
+		{
+			"name": "create category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Access-Key",
+						"type": "text",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer JB4ilxgLXSFiYYkS68cLb9kqc7yUBx"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://104.248.176.152:81/api/v1/catalogs/?category_id=7",
+					"protocol": "http",
+					"host": [
+						"104",
+						"248",
+						"176",
+						"152"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"catalogs",
+						""
+					],
+					"query": [
+						{
+							"key": "category_id",
+							"value": "7"
+						}
+					]
+				},
+				"description": "Get sticker list"
+			},
+			"response": []
+		},
+		{
+			"name": "Post item to CART",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "make_model",
+							"value": "55",
+							"type": "text"
+						},
+						{
+							"key": "file_name",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "app",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mobile\":\"9579755285\",\n\t\"password\" :\"qwerty123\"\n}"
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/login/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get CART list by authenticate user id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Model list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/models/?parent=46",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"models",
+						""
+					],
+					"query": [
+						{
+							"key": "parent",
+							"value": "46"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete cart item by item id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 4EADSQG4bBIdRFpiYUIUmBzh5yWX6M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/item/35/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						"item",
+						"35",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post shipping address",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"shipping_type\" : \"customer\",\n\t\"name\" : \"Chengxin\",\n\t\"mobile\" : \"9875649875\",\n\t\"address1\" : \"A-9, Mourya Garden, Kothrud\",\n\t\"city\" : \"Pune\",\n\t\"State\" : \"MH\",\n\t\"pin_code\" : \"411038\"\n}"
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/shipping-address/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						"shipping-address",
+						""
+					]
+				},
+				"description": "Shipping type \n1. customer  2. store  use these 2 values."
+			},
+			"response": []
+		},
+		{
+			"name": "apply_offer POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"offer_code\" : \"OFFER6\"\n}"
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/apply-offer/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						"apply-offer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove offer PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"offer_code\" : \"OFFER6\"\n}"
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/cart/remove-offer/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"cart",
+						"remove-offer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get offers list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/offers/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"offers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile information",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Key",
+						"value": "mlkjhgfdsazxcvbnmlkjhgffdsaqwrio",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer fTbObTW3GnMqJBAQTxarbmknhfg1Wd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://165.22.179.40:81/api/v1/profile/",
+					"protocol": "http",
+					"host": [
+						"165",
+						"22",
+						"179",
+						"40"
+					],
+					"port": "81",
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
